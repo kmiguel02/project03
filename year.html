@@ -1,0 +1,77 @@
+<!--Karen Miguel
+Project_03
+April 26, 2017-->
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>First Year</title>
+		<link rel="stylesheet" href="https://kmiguel02.github.io/project03/css/style.css"/>
+		<style>
+		.slides {display:none;}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>My First Year</h1>
+		</header>
+		<div id="sidebar">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="personal.html">Personal Life</a></li>
+					<li><a href="#">First Year</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="slideshow" style="max-width:500px">
+			<div>
+				<img class="slides" src="https://kmiguel02.github.io/project03/images/all.jpeg" alt="K & V" style="width:100%">
+			</div>
+			<div>
+				<img class="slides" src="https://kmiguel02.github.io/project03/images/all2.jpeg" alt="K & V" style="width:100%">
+			</div>
+			<div>
+				<img class="slides" src="https://kmiguel02.github.io/project03/images/diana.png" alt="Diana" style="width:100%">
+			</div>
+			<div>
+				<img class="slides" src="https://kmiguel02.github.io/project03/images/bww2.jpeg" alt="D & D" style="width:100%">
+			</div>
+			<div>
+				<img class="slides" src="https://kmiguel02.github.io/project03/images/midterm.png" alt="D & D" style="width:100%">
+			</div>
+			<div>
+				<img class="slides" src="https://kmiguel02.github.io/project03/images/milton.jpg" alt="Milton" style="width:100%">
+			</div>
+		</div>
+		
+		<script>
+			var slideIndex = 1;
+			var myIndex = 0;
+			show();
+
+			function show() {
+			var i;
+			var x = document.getElementsByClassName("slides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(show, 2000); // Change image every 2 seconds  
+			}
+		</script>
+		
+		<footer>
+			<p>Created by Karen Miguel</p>
+			<address>
+				<p><a href="mailto:kmiguel@hawk.iit.edu">kmiguel@hawk.iit.edu</a></p>
+			</address>
+		</footer>
+	</body>
+</html>
